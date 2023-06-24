@@ -76,6 +76,7 @@ WSGI_APPLICATION = 'proyectoLibros.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 import pymysql
+pymysql.version_info = (1, 4, 6, 'final', 0)
 pymysql.install_as_MySQLdb()
 
 DATABASES = {
